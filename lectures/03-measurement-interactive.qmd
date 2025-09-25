@@ -1,0 +1,212 @@
+---
+title: "Measurement"
+format: 
+  revealjs:
+    multiplex: true
+    slide-number: true
+    theme: simple
+    incremental: true
+    touch: true
+editor: visual
+---
+
+```{r, include = F}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+library(ggpubr)
+library(directlabels)
+options(knitr.kable.NA = '')
+```
+
+## Last time
+
+Validity (4 types)
+
+-   Statistical Conclusion
+-   Internal
+-   External
+-   Construct(?)
+
+------------------------------------------------------------------------
+
+## Today
+
+More about construct validity and its role in scale development.
+
+------------------------------------------------------------------------
+
+## Conceptual clarity ([Bringmann, Elmer, & Eronen, 2022](../readings/bringmann_etal_2022.pdf))
+
+-   Identifying and characterizing the concept of study
+    -   This is independent of measurement and must happen before measurement
+-   Why is conceptual clarity important?
+
+::: notes
+-   Especially with concepts from everyday life, there are often many ways to define the concept. (Bringmann and co describe friendship, but think of others)
+    -   Must have consistency when evaluating a concept in a systematic way (e.g., science)
+-   Importantly, statistics cannot provide evidence for conceptual clarity
+:::
+
+------------------------------------------------------------------------
+
+## Quantitative fallacy
+
+[See this article.](readings/quantitative-fallacy.pdf)
+
+Applicant selection for medical residency positions. 
+* Subtest of medical licensing exam is best predictor of residency success. 
+* Great! 
+* Right?
+
+------------------------------------------------------------------------
+
+## Quantitative fallacy
+
+Fallacy:
+
+  1. Measure whatever can be easily measured.
+  2. Disregard things that cannot be measured easily. 
+  3. Presume things that cannot be measured easily are not important.
+  4. Presume that things that are not measured easily
+do not exist.
+
+------------------------------------------------------------------------
+
+Once a concept has been clarified, the next step is to measure it.
+
+Classical test theory states that:
+
+$$
+X = T + E
+$$
+
+X: Observed Score
+
+T: True Score
+
+E: error (random and unpredictable)
+
+------------------------------------------------------------------------
+
+Error is random and unpredictable.
+
+* assumes that it has a mean of error approaches 0 as number of measurements increases.
+
+Thus, if we measure people enough "times", we can get a good sense of their true score.
+
+* How many times?
+
+------------------------------------------------------------------------
+
+Measuring people multiple times is often impractical and inefficient (and potentially theoretically wrong), so how can we remove measurement error during a single assessment?
+
+How many items we do we need?
+
+------------------------------------------------------------------------
+
+### Reliability (Quantitude podcast)
+
+Measure of the consistency of a single test or scale. (Like measuring the person many times in a single session.)
+
+Not validity! You can have a reliable measure that is not valid.
+
+Which items?
+
+------------------------------------------------------------------------
+
+It wasn't assigned, but please read a great article by [Len Simms](https://uopsych.github.io/psy611/readings/Simms_2008.pdf)[^1]. This article focuses on the measurement using **survey** methods, but this logic extends to any measurement in which you aggregate multiple responses or scores.
+
+I'm going to use this article as a template for developing a new scale with you.
+
+There are many more articles worth reading on this (see [Bonus Materials](https://uopsych.github.io/psy611/bonus.html)), and frankly, you should look for a class in measurement/psychometrics. 
+
+------------------------------------------------------------------------
+
+## Phases of scale development
+
+:::::: columns
+:::: {.column width="25%"}
+::: columns
+As written by Jane Loevinger (1957) and summarized by Len Simms (2008)
+:::
+::::
+
+::: {.column width="75%"}
+![](images/scale-dev.png){width="593"}
+:::
+::::::
+
+------------------------------------------------------------------------
+
+Let's develop a scale for "academic stress."
+
+What are some specific aspects of academic stress?
+
+**Write the item pool**
+
+-   Items should be relevant and representative
+-   Seek to be over-inclusive
+
+::: notes
+...coursework pressure, deadlines, fear of failure, workload
+:::
+
+------------------------------------------------------------------------
+
+
+Add items here: <https://shorturl.at/rGg7m>
+
+------------------------------------------------------------------------
+
+## Guidelines for good items:
+
+::::: columns
+::: {.column width="50%"}
+-   Simple and straight forward
+-   No double-barrels
+-   Avoid slang
+-   Phrase items generally
+-   Phrase items about sensitive topics using matter-of-fact and nonperjorative language
+:::
+
+::: {.column width="50%"}
+-   Choose response format carefully
+    -   Dichotomous vs polytomous
+    -   Number of options
+    -   Response categories
+    -   Phrasing of items should be consistent with response format
+:::
+:::::
+
+
+
+
+------------------------------------------------------------------------
+
+## Next steps:
+
+* Take scale
+* Discuss items
+* Basic descriptives (mean and variance)
+* Item-total correlations
+* Alpha/Omega
+* Factor analysis
+
+
+
+------------------------------------------------------------------------
+
+Takeaways:
+* Be able to perform psychometric analysis from memory. 
+* (Kidding)
+* Classical test theory
+* Scale development takes time, thought, iteration, and data. 
+
+------------------------------------------------------------------------
+
+## Next time...
+
+Describing data
+
+[^1]: Simms, L. J. (2008). Classical and modern methods of psychological scale construction. *Social and Personality Psychology Compass*, *2*(1), 414-433.
